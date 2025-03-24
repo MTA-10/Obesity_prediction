@@ -3,11 +3,13 @@ import numpy as np
 import joblib
 
 # Load the trained model and preprocessing objects
-model = joblib.load("obesity_rf_model.pkl")
+model = joblib.load("obesity_rf_model_fixed.pkl")
 scaler = joblib.load("scaler.pkl")
 label_encoder_gender = joblib.load("label_encoder_gender.pkl")
 label_encoder_obesity = joblib.load("label_encoder_obesity.pkl")
-
+scaler = joblib.load("scaler.pkl")
+label_encoder_gender = joblib.load("label_encoder_gender.pkl")
+label_encoder_obesity = joblib.load("label_encoder_obesity.pkl")
 # Streamlit UI
 st.title("Obesity Prediction Model")
 
